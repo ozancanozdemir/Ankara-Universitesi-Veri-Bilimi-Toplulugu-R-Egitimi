@@ -1,0 +1,283 @@
+4+3
+4-3
+getwd() #çalışma dizinini öğrenmek için
+setwd("~/Desktop/AÜVBT/Gün1 ")
+getwd() #çalışma dizinini öğrenmek için
+dir() #çalışma dizinindeki dosyaları listele
+sessionInfo()
+5+3
+5-3
+7*8
+88/2
+5^2
+3**4
+18%%4 # 18 (mod 4)
+log(5) #ln
+log10(1000) #log10
+sqrt(4)
+pi
+x <- 5
+x <<- 5
+x = 5
+5 -> x
+5 ->> x
+X = 4
+x
+X
+metu<-1956
+stat<-1975
+ozan<-1994
+metu
+print(metu) #print değişkeninizi konsolda görüntüler
+print(stat)
+print(ozan)
+ls() #çalışma alanında hangi nesneler ve fonksiyonların kaydedildiğini görmek için
+rm("ozan") #çalışma alanından ozan nesnesini kaldırır
+rm(list=ls()) #çalışma alanındaki her şeyi kaldırır
+2*4 - (2/7)
+2*(4 -(2/7))
+7^2 + (4*40/5) - 3
+x = 5
+x^2 + 2*x + 6
+?mean #veya
+help(median)
+??mean
+help.search("mean")
+library(ggplot2)
+require()
+require(ggplot2)
+adim <- "Ozancan"
+class(adim)
+adim_soyadim <- "Ozancan Ozdemir"
+class(adim_soyadim)
+yasim <- 28
+class(yasim)
+yasim_2 <- 28L
+class(yasim_2)
+denklem <- 4+8i
+class(denklem)
+karar <- TRUE
+class(karar)
+print(yasim_2)
+class(yasim_2)
+yasim_3 <- as.numeric(yasim_2)
+class(yasim_3)
+as.character(yasim)
+as.character(yasim) + as.character(yasim)
+as.numeric(yasim_2) + as.numeric(yasim_2)
+as.integer(adim) #NA döner
+number_but_character <- "28"
+print(number_but_character)
+class(number_but_character)
+as.numeric(number_but_character)
+is.integer(yasim)
+is.character(adim)
+6 > 7
+9 != 6
+6 > 7
+9 != 6
+3<5&6>7
+3<5|6>7
+x <- 9
+x < 8
+sq <- 1:10 #1 ile 10 arasında bir dizi oluşturun.
+print(sq)
+class(sq)
+sq > 6
+sq[sq > 6] #sq nesnesinde 6'yı aşan değerleri döndürür.
+1:20 #1'den 20'ye kadar varsayılan artış değeri 1 olan bir dizi
+seq(1,20)#1'den 20'ye kadar varsayılan artış değeri 1 olan bir dizi
+seq(from = 1, to = 10)
+seq(1,10,2)
+a<-seq(1,9,3)
+a
+a
+rep(seq(1,9,3),4) #dizinin kendisini 4 kez tekrarlar.
+rep(seq(1,9,3),each=4) #dizideki sayıları 4 kez tekrarlar
+a <- c(1, 2.8, 5, 3, 6, -2, 4.6)
+print(a)
+class(a)
+b <- c("one", "two", "three")
+print(b)
+class(b)
+c <- c(TRUE, TRUE, TRUE, FALSE, TRUE, FALSE)
+print(c)
+class(c)
+metu<- c("odtu", 1956,  "yilinda","kuruldu")
+print(metu)
+class(metu)
+a
+length(a)
+is.vector(a)
+a[3]
+a[c(1,3,5)]
+a[-3]
+a[-c(1,3,5)]
+a
+a1 =  a[-c(1,3,5)]
+a[a != 3]
+a[a>=4]
+sort(a)
+sort(a, decreasing = TRUE)
+exp(a)
+log(a)
+a*2
+print(metu)
+metu[metu == "odtu"]
+ryj
+metu
+metu[metu == "odtu"]
+which(metu=="odtu")
+takim = c("Galatasaray","Fenerbahce","Besiktas")
+gol = c(30,10,10)
+takim
+gol
+rbind(takim,gol) #her iki nesne de eşit uzunlukta olmalıdır
+cbind(takim,gol)
+mat1 <-matrix(1:6, nrow= 3, ncol=2)
+mat1
+class(mat1)
+is.matrix(mat1)
+mat2 <-matrix(1:6, ncol=2)
+mat2
+matrix(0,5,5) # 5x5 tüm elemanları 0 olan matris
+matrix(1,4,4) # 4x4 tüm elemanları 1 olan matris
+diag(1,4,4) # 4x4 birim matris
+mat3
+mat3 <- matrix(1:9,3,3)
+print(mat3)
+dim(mat3)
+nrow(mat3) #satır sayısını döndürür
+ncol(mat3) #sütun sayısını döndürür
+mat3[2,]
+mat3[2,1]
+mat3[c(1,2),c(1,2)]
+mat3[c(1,2),c(1,2)]
+mat3
+mat3[1,] = c(1.1,4.4,7.7)
+mat3
+mat3[,-3]
+mat3[-1,]
+mat3[1,1] <- NA
+mat3
+mat3
+rownames(mat3)=c("istanbul","beyoglu","taksim")
+colnames(mat3)=c("galata","saray","takimi")
+print(mat3)
+m <- matrix(c(1,2,3,4) , 2,2,T)
+m
+m
+m[ ,3] <- c(1,2) # Üçüncü sütun yok!
+dim(m)
+cbind(m , c(1, 2))
+rbind(m , c(1, 2))
+cbind(m , c(1, 2, 3))
+rbind(m , c(1, 2, 3))
+A <- matrix(c( 6, 1, 0, -3,-1, 2),3, 2, byrow = TRUE)
+print(A)
+B <- matrix(c( 4, 2, 0, 1, -5, -1),3, 2, byrow = TRUE)
+print(B)
+A + B
+dim(A) == dim(B)
+A * B # bu bileşen-bileşen çarpımıdır, matris çarpımı değildir
+A
+B
+t(A) #matrisin transpozunu almak
+C<-matrix(c(2,4,2,8),nrow=2)
+C
+ncol(A) == nrow(C)
+A%*%C #matris çarpımı
+det(C) #matrisin determinantı
+solve (C) #matrisin tersini almak
+myarray <- array(c(1:80), c(2, 5, 10))
+myarray
+2 %in% myarray
+200 %in% myarray
+patientID <- c(1, 2, 3, 4)
+age <- c(25, 34, 28, 52)
+diabetes <- c("Type1", "Type2", "Type1", "Type1")
+level <- c(120, 80, 75, 130)
+stage <- c("Poor", "Improved", "Excellent", "Poor")
+patientdata <- data.frame(patientID, age, diabetes, level, stage)
+patientdata
+class(patientdata) #sınıfı kontrol et
+class(patientdata) #sınıfı kontrol et
+is.data.frame(patientdata) #nesne adını doğrula
+str(patientdata) #fonksiyonun detaylarını gösterir
+patientdata
+patientdata[1:2]
+patientdata[c(2,4),]
+patientdata[c("diabetes", "stage")]
+attach(patientdata)
+patientdata
+age
+# ldskjgflkjglfd
+fldkjgfkjdhgkfd
+patientdata[3,"age"]
+patientdata[3,2] = 27
+patientdata
+patientdata$age
+patientdata[patientdata$age>30,]
+patientdata$age #vektör nesnesi döner
+patientdata$age[patientdata$age>30]
+patientdata
+patientdata$diab_index = patientdata$level/patientdata$age
+print(patientdata)
+patientpersonal <- data.frame(gender = c("Male",
+"Female",
+"Female","Male"),
+status = c("Married","Single",
+"Single","Married"))
+print(patientpersonal)
+patientdata1 <- data.frame(patientdata,patientpersonal)
+print(patientdata1)
+patientpersonal1 <- data.frame(patientID  =  c(1, 2, 3, 4),
+gender = c("Male",
+"Female",
+"Female","Male"),
+status = c("Married","Single",
+"Single","Married"))
+print(patientpersonal1)
+patientdata
+patientdata2<-merge(patientdata,patientpersonal1,by ="patientID")
+print(patientdata2)
+x <- c(6,8,10)
+x
+class(x)
+is.list(x)
+list1 <- list(6,8,c(10,4))
+list1
+class(list1)
+length(list1) #nesnenin uzunluğunu döner
+unlist(list1) #vektör döner
+j <- list(c("Joe","Marry","Michael"),
+c(55000,12000,7000),
+c(46,28,20))
+print(j)
+length(j)
+str(j)
+j[[1]]
+j[[2]]
+j[[1]]
+j[[1]][2]
+j1 <- list(name=c("Joe","Marry","Michael"),
+salary=c(55000,12000,7000),
+age=c(46,28,20))
+print(j1)
+j1$name
+j1$name[2]
+names(j) <- c("name","salary","age")
+print(j)
+"Marry" %in% j1
+j1
+"Marry" %in% j1
+"Marry" %in% j1$name
+append(j1, "ozan")
+j1[[1]][4] = "ozan"
+j1
+append(j1, "ozan", after = 2)
+j1[-1]
+# önceki komutlarınızla çalışın
+history() # son 25 komutu görüntüle
+# komut geçmişinizi kaydedin
+savehistory(file="mycodes")
